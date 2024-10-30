@@ -1,0 +1,80 @@
+/*
+  Project: Lightning Fast Social Media Buttons Plugin
+  Author: Xfive
+ */
+/* 320px */
+/* 768px */
+/* 1024px */
+/* 1600px */
+.c-lf-buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 4rem 0 2rem; }
+  @media only screen and (min-width: 768px) {
+    .c-lf-buttons {
+      align-content: flex-start;
+      flex-direction: row;
+      margin: 4rem 1rem 4rem 0; } }
+
+.c-lf-buttons__button {
+  background: #3E606F;
+  border-radius: 100%;
+  color: #FCFFF5;
+  display: block;
+  font-weight: bold;
+  height: 6rem;
+  line-height: 6rem;
+  margin-bottom: 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  width: 6rem; }
+  @media only screen and (min-width: 768px) {
+    .c-lf-buttons__button {
+      margin-bottom: 0; } }
+  .c-lf-buttons__button:hover {
+    transform: scale(1.1); }
+    @media only screen and (min-width: 768px) {
+      .c-lf-buttons__button:hover {
+        transform: scale(1.2); } }
+
+.c-lf-buttons__icon {
+  fill: #FCFFF5;
+  height: 35%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 35%; }
+
+.c-lf-buttons__counter {
+  background: #91AA9D;
+  border-radius: 100%;
+  color: #FCFFF5;
+  display: none;
+  font-size: 1.125rem;
+  font-weight: bold;
+  height: 3rem;
+  line-height: 3rem;
+  position: absolute;
+  right: -1.25rem;
+  text-align: center;
+  text-decoration: none;
+  top: -1.25rem;
+  width: 3rem;
+  z-index: 1; }
+  .c-lf-buttons__counter.is-visible {
+    display: block;
+    animation: a-scale-up 0.2s ease-in forwards; }
+
+@keyframes a-scale-up {
+  0% {
+    transform: scale(0); }
+  70% {
+    transform: scale(1.5); }
+  100% {
+    transform: scale(1); } }
